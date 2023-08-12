@@ -1,0 +1,79 @@
+/* Universal selector:-*/
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*The box-sizing property allows us to include the padding and border in an element's total width and height. 
+    If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now! Hooray! */
+}
+
+
+
+/* Body selector */
+body
+{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #e0e3eb;
+}
+
+
+
+/* #calculator-container-selector */
+#Calculator-container
+{
+    position: relative;
+    background-color: #fff;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow:  0  5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px 20px;
+}
+
+/* Calculator-screenDisplay */
+.screenDisplay
+{
+height: 88px;
+width: 100%;
+text-align: right;
+border: none;
+outline: none;
+font-size: 25px;
+margin-bottom: 10px;
+color:#000e1a;
+}
+
+
+/* calculator-Buttons */
+.Buttons
+{
+   display: grid;   /* For look like a calculator */
+   grid-template-columns:repeat(4,1fr) ;
+   grid-gap: 10px;   /*Gaps(space) between buttons */
+
+}
+
+
+/* In class Buttons is button to stylize the buttons */
+.Buttons button
+{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size:20px ;
+    background-color: #eee;
+}
+
+
+.Buttons button:active
+{
+
+
+
+}
