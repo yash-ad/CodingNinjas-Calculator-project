@@ -1,4 +1,4 @@
-/* Universal selector:-*/
+/* Universal selector*/
 *
 {
     font-family: 'Poppins', sans-serif;
@@ -38,7 +38,7 @@ background-color: #e0e3eb;
 /* Calculator-screenDisplay */
 .screenDisplay
 {
-height: 88px;
+height: 90px;
 width: 100%;
 text-align: right;
 border: none;
@@ -46,6 +46,8 @@ outline: none;
 font-size: 25px;
 margin-bottom: 10px;
 color:#000e1a;
+pointer-events: none;
+/* The pointer-events are triggered by touch, stylus, mouse click, and many more. */
 }
 
 
@@ -71,9 +73,21 @@ color:#000e1a;
 }
 
 
+
+/* The :active selector is used to select and style the active link.
+A link becomes active when you click on it.
+The :active selector can be used on all elements, not only links. */
 .Buttons button:active
 {
+transform: scale(0.99);
+}
 
+
+
+
+/* Operators for perform operations in between operands */
+.Operator{
+color:#2f9fff ;
 
 
 }
