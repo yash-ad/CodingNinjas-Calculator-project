@@ -9,7 +9,7 @@ let output = "";
 //`output`: A variable that stores the current input/output for calculations.
 
 
-//This calculate() function is responsible for handling different button clicks
+//calculate() function is responsible for handling different button clicks
 //and updating the `output` and display accordingly.
 const calculate = (btnValue) =>
 {
@@ -18,6 +18,7 @@ if(btnValue === "=" && btnValue !== "")
 {
 // handling percentage calculations by replacing `%` with `/100` before evaluation.
 output = eval(output.replace("%","/100"))
+
 }
 //If the AllClear`AC` button is clicked, it clears the `output`.
 else if(btnValue === "AC")
@@ -48,12 +49,12 @@ else
 // output += btnValue;
 // If the conditions in the previous if statement are not met, 
 // this line appends the value of the clicked button (btnValue) to the output string.
-// For example, if output is "123" and the button with a value of "+" is clicked, 
-// this line would change output to "123+".
+
     if(output === "" && specialChars.includes(btnValue)) return;
 output += btnValue; //Addition assignment operator which is used to addition either numeric or string concatenation and  the value to the left operand.
 }
 display.value = output;
+
 //After updating the output string, 
 //this line updates the value displayed on the calculator's display screen (represented by the display element) with the current value of the output string.
 //This ensures that the user sees the updated input/output on the calculator's display as they interact with the buttons.
